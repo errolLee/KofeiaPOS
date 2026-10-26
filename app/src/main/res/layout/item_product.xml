@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Dito na inilagay ang ImageView sa loob ng pabilog na background -->
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_circle"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/kofeia_green"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/kofeia_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/kofeia_brown"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

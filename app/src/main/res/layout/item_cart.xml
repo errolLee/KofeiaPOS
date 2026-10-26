@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="14dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCartName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/kofeia_green"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kofeia_brown"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnMinus"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_qty"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="−"
+        android:textColor="@color/kofeia_green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvQty"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/kofeia_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnPlus"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_qty"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/kofeia_green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
